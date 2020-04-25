@@ -44,6 +44,9 @@ pygame.display.set_caption("ball");
 
 rect = plate(400,win_size[1]-30,win_size[0]/8,10)
 ball = ball_class(100,10,5)
+ball2 = ball_class(130,10,5)
+ball3 = ball_class(160,10,5)
+ball4 = ball_class(190,10,5)
 run = True
 while run:
 	pygame.time.delay(20)
@@ -62,6 +65,9 @@ while run:
 	win.fill((0,0,0));
 	rect.draw(win)
 	ball.draw(win)
+	ball2.draw(win)
+	ball3.draw(win)
+	ball4.draw(win)
 	pygame.display.update();
 
 pygame.quit()
